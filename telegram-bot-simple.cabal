@@ -1,9 +1,4 @@
--- This file has been generated from package.yaml by hpack version 0.28.2.
---
--- see: https://github.com/sol/hpack
---
--- hash: b0f1a9c9eb60eb7bbec81ed3a356f6fbdb1c0eded979812657501e07cdebc427
-
+cabal-version: 1.12
 name:           telegram-bot-simple
 version:        0.2.0
 synopsis:       Easy to use library for building Telegram bots.
@@ -17,10 +12,9 @@ copyright:      Nickolay Kudasov
 license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
-cabal-version:  >= 1.10
 extra-source-files:
-    CHANGELOG.md
     README.md
+    CHANGELOG.md
 
 source-repository head
   type: git
@@ -49,94 +43,87 @@ library
       Telegram.Bot.Simple.InlineKeyboard
       Telegram.Bot.Simple.Reply
       Telegram.Bot.Simple.UpdateParser
-  other-modules:
-      Paths_telegram_bot_simple
-  hs-source-dirs:
-      src
+  other-modules: Paths_telegram_bot_simple
+  hs-source-dirs: src
   ghc-options: -Wall
-  build-depends:
-      aeson
-    , aeson-pretty
-    , base >=4.9 && <5
-    , bytestring
-    , cron
-    , hashable
-    , http-api-data
-    , http-client
-    , http-client-tls
-    , monad-control
-    , mtl
-    , pretty-show
-    , profunctors
-    , servant
-    , servant-client
-    , split
-    , stm
-    , template-haskell
-    , text
-    , time
-    , transformers
-    , unordered-containers
+  build-depends: aeson
+               , aeson-pretty
+               , base >=4.9 && <5
+               , bytestring
+               , cron
+               , hashable
+               , http-api-data
+               , http-client
+               , http-client-tls
+               , monad-control
+               , mtl
+               , pretty-show
+               , profunctors
+               , servant
+               , servant-client
+               , split
+               , stm
+               , template-haskell
+               , text
+               , time
+               , transformers
+               , unordered-containers
   default-language: Haskell2010
 
 executable example-echo-bot
   main-is: examples/EchoBot.hs
-  other-modules:
-      Paths_telegram_bot_simple
+  other-modules: Paths_telegram_bot_simple
   ghc-options: -Wall -threaded -rtsopts -with-rtsopts=-N
-  build-depends:
-      aeson
-    , aeson-pretty
-    , base >=4.9 && <5
-    , bytestring
-    , cron
-    , hashable
-    , http-api-data
-    , http-client
-    , http-client-tls
-    , monad-control
-    , mtl
-    , pretty-show
-    , profunctors
-    , servant
-    , servant-client
-    , split
-    , stm
-    , telegram-bot-simple
-    , template-haskell
-    , text
-    , time
-    , transformers
-    , unordered-containers
+  build-depends: aeson
+               , aeson-pretty
+               , base >=4.9 && <5
+               , bytestring
+               , cron
+               , hashable
+               , http-api-data
+               , http-client
+               , http-client-tls
+               , monad-control
+               , mtl
+               , pretty-show
+               , profunctors
+               , servant
+               , servant-client
+               , split
+               , stm
+               , telegram-bot-simple
+               , template-haskell
+               , text
+               , time
+               , transformers
+               , unordered-containers
   default-language: Haskell2010
 
 executable example-todo-bot
   main-is: examples/EchoBot.hs
-  other-modules:
-      Paths_telegram_bot_simple
+  other-modules: Paths_telegram_bot_simple
   ghc-options: -Wall -threaded -rtsopts -with-rtsopts=-N
-  build-depends:
-      aeson
-    , aeson-pretty
-    , base >=4.9 && <5
-    , bytestring
-    , cron
-    , hashable
-    , http-api-data
-    , http-client
-    , http-client-tls
-    , monad-control
-    , mtl
-    , pretty-show
-    , profunctors
-    , servant
-    , servant-client
-    , split
-    , stm
-    , telegram-bot-simple
-    , template-haskell
-    , text
-    , time
-    , transformers
-    , unordered-containers
+  build-depends: aeson
+               , aeson-pretty
+               , base >=4.9 && <5
+               , bytestring
+               , cron
+               , hashable
+               , http-api-data
+               , http-client
+               , http-client-tls
+               , monad-control
+               , mtl
+               , pretty-show
+               , profunctors
+               , servant
+               , servant-client
+               , split
+               , stm
+               , telegram-bot-simple
+               , template-haskell
+               , text
+               , time
+               , transformers
+               , unordered-containers
   default-language: Haskell2010
